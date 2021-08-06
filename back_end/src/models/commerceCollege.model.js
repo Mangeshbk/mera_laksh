@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const enggCollegeSchema = new mongoose.Schema(
+const commerceCollegeSchema = new mongoose.Schema(
     {
         Name:{type:String,required:true},
         Ratings:{type:Number,required:true},
@@ -15,5 +15,6 @@ const enggCollegeSchema = new mongoose.Schema(
         versionKey: false,
         timestamps: true,
     }
-)
-module.exports = mongoose.model('EnggCollege', enggCollegeSchema);
+);
+
+module.exports = mongoose.model('CommerceCollege', commerceCollegeSchema);

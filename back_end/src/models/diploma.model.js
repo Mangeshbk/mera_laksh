@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const enggCollegeSchema = new mongoose.Schema(
+const diplomaSchema = new mongoose.Schema(
     {
         Name:{type:String,required:true},
         Ratings:{type:Number,required:true},
         Hostel:{type:Boolean,required:true},
-        Branches_Available:[{type:String,required:true}],
+        Branches_Available:[{type:String}],
         CutOff:{type:Number,required:true},
         Fees:{type:Number,required:true},
         Url:{type:String,required:true},
@@ -16,4 +16,5 @@ const enggCollegeSchema = new mongoose.Schema(
         timestamps: true,
     }
 )
-module.exports = mongoose.model('EnggCollege', enggCollegeSchema);
+
+module.exports = mongoose.model('DiplomaCollege', diplomaSchema);

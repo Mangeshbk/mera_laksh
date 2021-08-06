@@ -11,6 +11,8 @@ router.post('/',async(req,res)=>{
 
 
 router.get('/',async(req,res)=>{
+    const sortquery = ""
+    console.log(req.query);
     const college = await EnggCollege.find().lean().exec();
     return res.status(200).json({data:college});
 });
