@@ -3,9 +3,11 @@ import './App.css';
 
 function App() {
   return (
-      <div className="dashboard">
-        
-      </div>
+    <div className="App">
+      <header className="App-header">
+        MeraLaksh
+      </header>
+    </div>
   );
 }
 
