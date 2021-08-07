@@ -20,7 +20,10 @@ export default function Routes() {
         <Route exact path="/education_path">
           <EducationPath />
         </Route>
-        <Route exact path="/education_path:id">
+        <Route exact path="/education_path:category">
+          <Journy />
+        </Route>
+        <Route exact path="/:college">
           <Journy />
         </Route>
       </Switch>
