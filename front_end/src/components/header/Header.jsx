@@ -11,11 +11,10 @@ function Header() {
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
               <div data-aos="zoom-out">
                 <h1>
-                  Build Your Landing Page With <span>Bootstlander</span>
+                Building A Better World &nbsp; <span>One Student At A Time !</span>
                 </h1>
                 <h2>
-                  We are team of talented designers making websites with
-                  Bootstrap
+               A good education brings affinity and kills differences in the society.
                 </h2>
                 <div className="text-center text-lg-start">
                   <a href="#about" className="btn-get-started scrollto">
