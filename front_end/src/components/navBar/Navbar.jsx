@@ -1,11 +1,22 @@
-import React from "react";
-
+import React, { useState } from "react";
+import   './navBar.css'
 function Navbar() {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+    if(window.scrollY >= 80){
+      setColorchange(true);
+    }
+    else{
+      setColorchange(false);
+    }
+ };
+ window.addEventListener('scroll', changeNavbarColor);
+ 
   return (
     <>
       <header
         id="header"
-        className="fixed-top d-flex align-items-center header-transparent"
+        className={colorChange ? "fixed-top d-flex align-items-center header-chnageBg": "fixed-top d-flex align-items-center header-transparent"}
         // style={{ background: "blue" }}
       >
         <div className="container d-flex align-items-center justify-content-between">
