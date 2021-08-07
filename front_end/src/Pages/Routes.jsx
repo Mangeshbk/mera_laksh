@@ -5,12 +5,13 @@ import Home from "./Home";
 import Footer from "../components/footer/Footer";
 import ScrollToTop from "../components/scrollToTop/ScrollToTop";
 import EducationPath from "./educatinoPath/EducationPath";
+import RecommendedCollege from './recommendecCollege/RecommendedCollege';
 import Journy from "./journy/Journy";
 
 export default function Routes() {
   return (
     <>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Navbar />
       <Switch>
         <Route exact path="/">
@@ -20,11 +21,11 @@ export default function Routes() {
         <Route exact path="/education_path">
           <EducationPath />
         </Route>
-        <Route exact path="/education_path:category">
+        <Route path="/education_path/:category">
           <Journy />
         </Route>
-        <Route exact path="/:college">
-          <Journy />
+        <Route exact path="/college_list/:college">
+          <RecommendedCollege />
         </Route>
       </Switch>
       <Footer />

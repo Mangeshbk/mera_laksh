@@ -6,7 +6,7 @@ const ScrollToTop = () => {
 
     const scrollerVisible = () => {
         const scrolled = document.documentElement.scrollTop
-        console.log(scrolled)
+        // console.log(scrolled)
         if (scrolled > 200) {
             setShowScroll(true)
         }

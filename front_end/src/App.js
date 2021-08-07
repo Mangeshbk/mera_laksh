@@ -9,7 +9,7 @@ function App() {
   const redirect = () => {
     window.location.href = "localhost://3000?apple=1";
   };
-  console.log(history);
+  // console.log(history);
   return (
     <div>
       <Routes />

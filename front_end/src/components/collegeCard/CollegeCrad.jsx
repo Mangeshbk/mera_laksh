@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CollegeCrad = () => {
+const CollegeCrad = ({clg}) => {
     return (
 
         <>
@@ -13,16 +13,16 @@ const CollegeCrad = () => {
                         alt=""
                     />
                     <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
+                        <h3>{clg.Name}</h3>
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quaerat dignissimos veritatis consequatur inventore ducimus omnis eos ea in saepe optio cumque, dolorem veniam reprehenderit nesciunt? Hic ab ratione minima?
+                            Branches Available:{clg.Branches_Available}
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <a
                                     type="button"
                                     class="btn btn-sm btn-outline-primary official-websiteBtn"
-                                    href="https://github.com/Mangeshbk/mera_laksh"
+                                    href={clg.Url}
                                     target="_blank"
                                     rel="noreferrer"
                                 >
