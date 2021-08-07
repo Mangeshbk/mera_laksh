@@ -11,7 +11,7 @@ function Navbar() {
     }
  };
  window.addEventListener('scroll', changeNavbarColor);
- 
+
   return (
     <>
       <header
@@ -23,7 +23,7 @@ function Navbar() {
           <div className="logo">
             <h1>
               <a href="index.html">
-                <span>Mera Laksh</span>
+                <span>मेरा लक्ष्य</span>
               </a>
             </h1>
             {/* <!-- Uncomment below if you prefer to use an image logo --> */}

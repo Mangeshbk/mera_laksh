@@ -59,7 +59,7 @@ function Header() {
             <use x="50" y="9" fill="#fff" />
           </g>
         </svg>
-        <Wave fill='#5DA3FA'
+        <Wave fill='#B4161B'
         className={styles.wave_comp}
           paused={false}
           options={{
