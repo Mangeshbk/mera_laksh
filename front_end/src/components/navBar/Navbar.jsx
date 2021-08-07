@@ -42,74 +42,32 @@ function Navbar() {
 
           <nav id="navbar" className="navbar">
             <ul>
-              <li>
+              <li onClick={() => history.push("/")}>
                 <a className="nav-link scrollto active" href="#hero">
                   Home
                 </a>
               </li>
-              <li>
+              <li onClick={() => history.push("/#about")}>
                 <a className="nav-link scrollto" href="#about">
                   About
                 </a>
               </li>
-              <li>
+              <li onClick={() => history.push("/#features")}>
                 <a className="nav-link scrollto" href="#features">
                   Features
                 </a>
               </li>
-              <li>
+              <li onClick={() => history.push("/#gallery")}>
                 <a className="nav-link scrollto" href="#gallery">
                   Gallery
                 </a>
               </li>
-              <li>
+              <li onClick={() => history.push("/#team")}>
                 <a className="nav-link scrollto" href="#team">
                   Team
                 </a>
               </li>
-              {/* <li className="dropdown">
-                <a href="#">
-                  <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
-                </a>
-                <ul>
-                  <li>
-                    <a href="#">Drop Down 1</a>
-                  </li>
-                  <li className="dropdown">
-                    <a href="#">
-                      <span>Deep Drop Down</span>{" "}
-                      <i className="bi bi-chevron-right"></i>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 4</a>
-                  </li>
-                </ul>
-              </li> */}
-              <li>
+              <li onClick={() => history.push("/#contact")}>
                 <a className="nav-link scrollto" href="#contact">
                   Contact
                 </a>

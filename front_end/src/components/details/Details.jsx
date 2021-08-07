@@ -4,7 +4,8 @@ function Details() {
   return (
     <>
       {/* <!-- ======= Details Section ======= --> */}
-      <section id="details" className="details">
+
+      <section id="about" className="details">
         <div className="container">
           <div className="row content">
             <div className="col-md-4" data-aos="fade-right">
