@@ -19,9 +19,10 @@ router.post('/',async(req,res)=>{
 //getting a particular jounrney by type
 router.get('/:stream',async(req,res)=>{
     let stream = req.params.stream;
-    const journey = await Journey.find({'stream':stream}).lean().exec();
+    const journey = await Journey.find({stream:stream}).lean().exec();
     return res.status(200).json({data:journey});
 })
+//createdAt:"2021-08-06T14:42:54.899Z"
 // //updating a single student by id
 // router.patch('/:id',async(req,res)=>{
 //     const student = await Student.findByIdAndUpdate(req.params.id,req.body,{new:true});
