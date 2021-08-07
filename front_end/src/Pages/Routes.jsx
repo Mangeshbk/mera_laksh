@@ -19,7 +19,7 @@ export default function Routes() {
         <Route exact path="/education_path">
           <EducationPath />
         </Route>
-        <Route exact path="/ac"></Route>
+        <Route exact path="/education_path:id"></Route>
       </Switch>
       <Footer />
     </>
