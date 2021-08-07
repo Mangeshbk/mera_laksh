@@ -30,8 +30,6 @@ function Home() {
 
         <Contact />
       </main>
-
-     
     </>
   );
 }

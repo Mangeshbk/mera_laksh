@@ -23,6 +23,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-1.jpg"
@@ -45,6 +46,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-2.jpg"
@@ -67,6 +69,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-3.jpg"
@@ -89,6 +92,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-4.jpg"
@@ -100,7 +104,7 @@ function Gallery() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-4">
+            <div style={{ marginTop: "25px" }} className="col-lg-3 col-md-4">
               <div
                 className="gallery-item"
                 data-aos="zoom-in"
@@ -111,6 +115,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-5.jpg"
@@ -122,7 +127,7 @@ function Gallery() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-4">
+            <div style={{ marginTop: "25px" }} className="col-lg-3 col-md-4">
               <div
                 className="gallery-item"
                 data-aos="zoom-in"
@@ -133,6 +138,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-6.jpg"
@@ -144,7 +150,7 @@ function Gallery() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-4">
+            <div style={{ marginTop: "25px" }} className="col-lg-3 col-md-4">
               <div
                 className="gallery-item"
                 data-aos="zoom-in"
@@ -155,6 +161,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-7.jpg"
@@ -166,7 +173,7 @@ function Gallery() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-4">
+            <div style={{ marginTop: "25px" }} className="col-lg-3 col-md-4">
               <div
                 className="gallery-item"
                 data-aos="zoom-in"
@@ -177,6 +184,7 @@ function Gallery() {
                   className="gallery-lightbox"
                 >
                   <img
+                    style={{ borderRadius: "5px" }}
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/img/gallery/gallery-8.jpg"
