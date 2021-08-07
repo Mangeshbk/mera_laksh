@@ -1,30 +1,38 @@
 import React, { useState } from "react";
-import   './navBar.css'
+import { useHistory } from "react-router-dom";
+import "./navBar.css";
 function Navbar() {
   const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () =>{
-    if(window.scrollY >= 80){
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
       setColorchange(true);
-    }
-    else{
+    } else {
       setColorchange(false);
     }
- };
- window.addEventListener('scroll', changeNavbarColor);
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+
+  const history = useHistory();
 
   return (
     <>
       <header
         id="header"
-
-        className={colorChange ? "fixed-top d-flex align-items-center header-chnageBg": "fixed-top d-flex align-items-center header-transparent"}
-        // style={{ background: "#0D13A1" }}
-
+        className={
+          colorChange
+            ? "fixed-top d-flex align-items-center header-chnageBg"
+            : "fixed-top d-flex align-items-center header-transparent"
+        }
+        style={{ background: "#0D13A1" }}
       >
         <div className="container d-flex align-items-center justify-content-between">
-          <div className="logo">
+          <div
+            className="logo"
+            onClick={() => history.push("/")}
+            style={{ cursor: "pointer" }}
+          >
             <h1>
-              <a href="index.html">
+              <a href>
                 <span>मेरा लक्ष्य</span>
               </a>
             </h1>
