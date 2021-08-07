@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import "./navBar.css";
 function Navbar() {
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
+  // const [colorChange, setColorchange] = useState(false);
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 80) {
+  //     setColorchange(true);
+  //   } else {
+  //     setColorchange(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeNavbarColor);
 
   const history = useHistory();
 
@@ -18,11 +18,7 @@ function Navbar() {
     <>
       <header
         id="header"
-        className={
-          colorChange
-            ? "fixed-top d-flex align-items-center header-chnageBg"
-            : "fixed-top d-flex align-items-center header-transparent"
-        }
+        className={"fixed-top d-flex align-items-center header-transparent"}
         style={{ background: "#0D13A1" }}
       >
         <div className="container d-flex align-items-center justify-content-between">
@@ -32,9 +28,9 @@ function Navbar() {
             style={{ cursor: "pointer" }}
           >
             <h1>
-              <a href>
+              <link href>
                 <span>मेरा लक्ष्य</span>
-              </a>
+              </link>
             </h1>
             {/* <!-- Uncomment below if you prefer to use an image logo --> */}
             {/* <!-- <a href="index.html"><img src="./assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
@@ -43,34 +39,34 @@ function Navbar() {
           <nav id="navbar" className="navbar">
             <ul>
               <li onClick={() => history.push("/")}>
-                <a className="nav-link scrollto active" href="#hero">
+                <link className="nav-link scrollto active" href="#hero">
                   Home
-                </a>
+                </link>
               </li>
               <li onClick={() => history.push("/#about")}>
-                <a className="nav-link scrollto" href="#about">
+                <link className="nav-link scrollto" href="#about">
                   About
-                </a>
+                </link>
               </li>
               <li onClick={() => history.push("/#features")}>
-                <a className="nav-link scrollto" href="#features">
+                <link className="nav-link scrollto" href="#features">
                   Features
-                </a>
+                </link>
               </li>
               <li onClick={() => history.push("/#gallery")}>
-                <a className="nav-link scrollto" href="#gallery">
+                <link className="nav-link scrollto" href="#gallery">
                   Gallery
-                </a>
+                </link>
               </li>
               <li onClick={() => history.push("/#team")}>
-                <a className="nav-link scrollto" href="#team">
+                <link className="nav-link scrollto" href="#team">
                   Team
-                </a>
+                </link>
               </li>
               <li onClick={() => history.push("/#contact")}>
-                <a className="nav-link scrollto" href="#contact">
+                <link className="nav-link scrollto" href="#contact">
                   Contact
-                </a>
+                </link>
               </li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
