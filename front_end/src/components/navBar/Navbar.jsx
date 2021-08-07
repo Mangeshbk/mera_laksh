@@ -16,8 +16,10 @@ function Navbar() {
     <>
       <header
         id="header"
+
         className={colorChange ? "fixed-top d-flex align-items-center header-chnageBg": "fixed-top d-flex align-items-center header-transparent"}
-        // style={{ background: "blue" }}
+        // style={{ background: "#0D13A1" }}
+
       >
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
@@ -57,12 +59,7 @@ function Navbar() {
                   Team
                 </a>
               </li>
-              <li>
-                <a className="nav-link scrollto" href="#pricing">
-                  Pricing
-                </a>
-              </li>
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <a href="#">
                   <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
                 </a>
@@ -103,7 +100,7 @@ function Navbar() {
                     <a href="#">Drop Down 4</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <a className="nav-link scrollto" href="#contact">
                   Contact
