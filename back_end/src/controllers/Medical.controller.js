@@ -17,13 +17,13 @@ router.post('/',async(req,res)=>{
 // })
 // getting all colleges sorted as per fees
 router.get('/',async(req,res)=>{
-    console.log(req.query);
+//    console.log(req.query);
     let sort_obj = {};
     let filter_obj = {};
     
     for(keys in req.query){
         let key_arr = keys.split('_');
-        console.log(key_arr);
+//        console.log(key_arr);
         if(key_arr[0]=="filter"){
             filter_obj[key_arr[1]] = req.query[keys];
         }else{
