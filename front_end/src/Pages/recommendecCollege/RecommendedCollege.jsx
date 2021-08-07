@@ -9,9 +9,10 @@ const RecommendedCollege = () => {
   const [error,setError] = useState(false);
   const [loading,setLoading] = useState(false);
   console.log(college);
-  useEffect(()=>{
-    fetchData();
-  },[])
+  // useEffect(()=>{
+  //   fetchData();
+  // },[])
+  
   const fetchData = async() =>{
     setLoading(true);
     try{
@@ -22,6 +23,7 @@ const RecommendedCollege = () => {
     }
     setLoading(false);
   }
+  fetchData();
   return (
     <div className="project-section">
       <div class="album py-5">
