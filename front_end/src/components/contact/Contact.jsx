@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  const [form, setForm] = useState("");
+
+  
   return (
     <>
       {/* <!-- ======= Contact Section ======= --> */}
