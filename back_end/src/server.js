@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 const app = require("./index");
 const connect = require("./config/db.js");
 
@@ -10,6 +10,7 @@ app.listen(PORT, async()=>{
         await connect();
         console.log("server running on 8080");   
     } catch (error) {
+        console.log("test")
         console.log(error.message);
     }
 });
