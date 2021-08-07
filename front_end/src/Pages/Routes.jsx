@@ -5,6 +5,7 @@ import Home from "./Home";
 import Footer from "../components/footer/Footer";
 import ScrollToTop from "../components/scrollToTop/ScrollToTop";
 import EducationPath from "./educatinoPath/EducationPath";
+import Journy from "./journy/Journy";
 
 export default function Routes() {
   return (
@@ -19,7 +20,9 @@ export default function Routes() {
         <Route exact path="/education_path">
           <EducationPath />
         </Route>
-        <Route exact path="/education_path:id"></Route>
+        <Route exact path="/education_path:id">
+          <Journy />
+        </Route>
       </Switch>
       <Footer />
     </>

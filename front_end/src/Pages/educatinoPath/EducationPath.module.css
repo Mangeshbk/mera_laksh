@@ -47,6 +47,10 @@
     cursor: pointer; 
 }
 
+.category h4{
+    text-align: center;
+}
+
 .category:hover{
     transform: scale(1.02);
 }
