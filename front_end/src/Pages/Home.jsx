@@ -8,6 +8,7 @@ import Gallery from "../components/gallery/Gallery.jsx";
 import Team from "../components/team/Team.jsx";
 import FAQ from "../components/FAQ/FAQ.jsx";
 import Contact from "../components/contact/Contact.jsx";
+import RecommendedCollege from "../components/recommendecCollege/RecommendedCollege.jsx";
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <Header />
 
       <main id="main">
+      <RecommendedCollege />
         <Feature />
 
         <Counting />
