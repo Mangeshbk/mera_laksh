@@ -23,9 +23,9 @@ export default function Routes() {
         <Route exact path="/education_path:category">
           <Journy />
         </Route>
-        <Route exact path="/:college">
+        {/* <Route exact path="/:college">
           <Journy />
-        </Route>
+        </Route> */}
       </Switch>
       <Footer />
     </>

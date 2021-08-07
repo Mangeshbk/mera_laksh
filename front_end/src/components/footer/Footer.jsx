@@ -21,7 +21,7 @@ export default function Footer() {
                   <p className="pb-3">
                     <em>
                       Mera Laksh is a platform which provides educational
-                      guidence for students to achive their goals.
+                      guidance for students to achieve their goals.
                     </em>
                   </p>
                 </div>
@@ -36,18 +36,18 @@ export default function Footer() {
                   style={{ marginLeft: "40px" }}
                   className="social-links mt-3"
                 >
-                  <a href="#" className="twitter">
+                  <link href="#" className="twitter">
                     <i className="bx bxl-twitter"></i>
-                  </a>
-                  <a href="#" className="facebook">
+                  </link>
+                  <link href="#" className="facebook">
                     <i className="bx bxl-facebook"></i>
-                  </a>
-                  <a href="#" className="instagram">
+                  </link>
+                  <link href="#" className="instagram">
                     <i className="bx bxl-instagram"></i>
-                  </a>
-                  <a href="#" className="linkedin">
+                  </link>
+                  <link href="#" className="linkedin">
                     <i className="bx bxl-linkedin"></i>
-                  </a>
+                  </link>
                 </div>
               </div>
 
