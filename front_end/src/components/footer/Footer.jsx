@@ -1,6 +1,8 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 export default function Footer() {
+  const history = useHistory();
   return (
     <>
       {/* <!-- ======= Footer ======= --> */}
@@ -10,7 +12,12 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-4 col-md-6">
                 <div className="footer-info">
-                  <h3>Mera Laksh</h3>
+                  <h3
+                    onClick={() => history.push("/")}
+                    style={{ cursor: "pointer" }}
+                  >
+                    मेरा लक्ष्य
+                  </h3>
                   <p className="pb-3">
                     <em>
                       Mera Laksh is a platform which provides educational
