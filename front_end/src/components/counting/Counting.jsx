@@ -16,7 +16,8 @@ function Counting() {
                   data-purecounter-duration="1"
                   className="purecounter"
                 ></span>
-                <p>Happy Clients</p>
+                <h3>500+</h3>
+                <p>Happy Students</p>
               </div>
             </div>
 
@@ -29,7 +30,8 @@ function Counting() {
                   data-purecounter-duration="1"
                   className="purecounter"
                 ></span>
-                <p>Projects</p>
+                <h3>1000+</h3>
+                <p>Enquiries</p>
               </div>
             </div>
 
@@ -42,6 +44,7 @@ function Counting() {
                   data-purecounter-duration="1"
                   className="purecounter"
                 ></span>
+                <h3>24 X 7</h3>
                 <p>Hours Of Support</p>
               </div>
             </div>
@@ -55,7 +58,8 @@ function Counting() {
                   data-purecounter-duration="1"
                   className="purecounter"
                 ></span>
-                <p>Hard Workers</p>
+                <h3>650+</h3>
+                <p>Community</p>
               </div>
             </div>
           </div>
