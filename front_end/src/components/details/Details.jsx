@@ -4,7 +4,6 @@ function Details() {
   return (
     <>
       {/* <!-- ======= Details Section ======= --> */}
-
       <section id="about" className="details">
         <div className="container">
           <div className="row content">
