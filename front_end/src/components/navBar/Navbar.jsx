@@ -1,18 +1,31 @@
-import React from "react";
-
+import React, { useState } from "react";
+import   './navBar.css'
 function Navbar() {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+    if(window.scrollY >= 80){
+      setColorchange(true);
+    }
+    else{
+      setColorchange(false);
+    }
+ };
+ window.addEventListener('scroll', changeNavbarColor);
+
   return (
     <>
       <header
         id="header"
-        className="fixed-top d-flex align-items-center header-transparent"
+
+        className={colorChange ? "fixed-top d-flex align-items-center header-chnageBg": "fixed-top d-flex align-items-center header-transparent"}
         // style={{ background: "#0D13A1" }}
+
       >
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
             <h1>
               <a href="index.html">
-                <span>Mera Laksh</span>
+                <span>मेरा लक्ष्य</span>
               </a>
             </h1>
             {/* <!-- Uncomment below if you prefer to use an image logo --> */}

@@ -1,5 +1,6 @@
 import React from "react";
-
+import Wave from 'react-wavify'
+import styles from "./Header.module.css"
 function Header() {
   return (
     <>
@@ -58,6 +59,16 @@ function Header() {
             <use x="50" y="9" fill="#fff" />
           </g>
         </svg>
+        <Wave fill='#B4161B'
+        className={styles.wave_comp}
+          paused={false}
+          options={{
+            height: 30,
+            amplitude: 50,
+            speed: 0.15,
+            points: 3
+          }}
+        />
       </section>
       {/* <!-- End Hero --> */}
     </>
