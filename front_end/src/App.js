@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import {Redirect,useHistory} from 'react-router-dom';
-// import useHistory from ''
+import Routes from "./Pages/Routes";
+
+
 function App() {
   const history = useHistory();
   const redirect = () =>{
@@ -10,12 +12,8 @@ function App() {
   }
   console.log(history);
   return (
-    <div className="App">
-      <header className="App-header">
-        MeraLaksh <br/>
-        Search Params:{window.location.search}
-        <button onClick={redirect}>Reload</button>
-      </header>
+    <div>
+      <Routes />
     </div>
   );
 }
