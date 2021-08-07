@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const history = useHistory();
@@ -21,7 +22,7 @@ export default function Footer() {
                   <p className="pb-3">
                     <em>
                       Mera Laksh is a platform which provides educational
-                      guidence for students to achive their goals.
+                      guidance for students to achieve their goals.
                     </em>
                   </p>
                 </div>
@@ -36,18 +37,18 @@ export default function Footer() {
                   style={{ marginLeft: "40px" }}
                   className="social-links mt-3"
                 >
-                  <a href="#" className="twitter">
+                  <Link href="#" className="twitter">
                     <i className="bx bxl-twitter"></i>
-                  </a>
-                  <a href="#" className="facebook">
+                  </Link>
+                  <Link href="#" className="facebook">
                     <i className="bx bxl-facebook"></i>
-                  </a>
-                  <a href="#" className="instagram">
+                  </Link>
+                  <Link href="#" className="instagram">
                     <i className="bx bxl-instagram"></i>
-                  </a>
-                  <a href="#" className="linkedin">
+                  </Link>
+                  <Link href="#" className="linkedin">
                     <i className="bx bxl-linkedin"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
