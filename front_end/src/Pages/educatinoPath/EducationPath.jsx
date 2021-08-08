@@ -6,22 +6,22 @@ const categories = [
   {
     img: "https://static.collegefinderindia.com/uploads/2020/10/Engineer-source.png",
     alt: "Engineering",
-    name: "Engineering",
+    name: "Engineer",
+  },
+  {
+    img: "https://static.collegefinderindia.com/uploads/2020/10/Engineer-source.png",
+    alt: "Doctor",
+    name: "Doctor",
   },
   {
     img: "https://static.collegefinderindia.com/uploads/2020/10/Engineer-source.png",
     alt: "Engineering",
-    name: "Engineering",
+    name: "Social Scientist",
   },
   {
     img: "https://static.collegefinderindia.com/uploads/2020/10/Engineer-source.png",
     alt: "Engineering",
-    name: "Engineering",
-  },
-  {
-    img: "https://static.collegefinderindia.com/uploads/2020/10/Engineer-source.png",
-    alt: "Engineering",
-    name: "Engineering",
+    name: "CA",
   },
   {
     img: "https://static.collegefinderindia.com/uploads/2020/10/Engineer-source.png",
@@ -133,7 +133,7 @@ function EducationPath() {
         <div
           key={ind}
           className={Styles.category}
-          onClick={() => history.push(`/education_path:${item.name}`)}
+          onClick={() => history.push(`/education_path/${item.alt}`)}
         >
           <img src={item.img} alt={item.alt} />
           <h4>{item.name}</h4>

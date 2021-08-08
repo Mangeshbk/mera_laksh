@@ -12,8 +12,8 @@ import Typography from "@material-ui/core/Typography";
 import SchoolIcon from "@material-ui/icons/School";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import PersonPinCircleIcon from "@material-ui/icons/PersonPinCircle";
-import { useHistory, useParams } from "react-router";
-
+import { useHistory, useParams  } from "react-router";
+import {Link} from 'react-router-dom';
 const useQontoStepIconStyles = makeStyles({
   root: {
     color: "#eaeaf0",
@@ -152,9 +152,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function getSteps() {
-  return ["10th", "12th", "Degree"];
-}
+// function getSteps() {
+//   return ["10th", "12th", "Degree"];
+// }
 
 // function getStepContent(step) {
 //   switch (step) {
@@ -169,14 +169,14 @@ function getSteps() {
 //   }
 // }
 
-export default function SingleJourny() {
+export default function SingleJourny({journey}) {
   const { college } = useParams();
   const history = useHistory();
-
-  console.log(college);
+  // console.log(journey);
+  // console.log(college);
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
-  const steps = getSteps();
+  const steps = [[10,'GoodLuck'],[journey.immediate_description,journey.immediate],[journey.after_description,journey.after]];
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -199,7 +199,9 @@ export default function SingleJourny() {
       >
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel StepIconComponent={ColorlibStepIcon}>{label}</StepLabel>
+            <StepLabel StepIconComponent={ColorlibStepIcon}>{label[0]}<Link to={`/college_list/${label[1]}`}>{label[0]==10?`Do your best`:`See colleges for it`}</Link>
+</StepLabel>
+            
           </Step>
         ))}
       </Stepper>

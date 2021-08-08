@@ -14,11 +14,11 @@ const MedicalController = require('./controllers/Medical.controller');
 // const topicController = require('./controllers/topic.controller');
 
 app.use('/journeys',Journeycontroller);
-app.use('/enggcollege',EnggCollegeController);
+app.use('/Engineering',EnggCollegeController);
 app.use('/commercecollege',CommerceCollegeController);
 app.use('/artcollege',ArtCollegeController);
 app.use('/intermediatecollege',IntermediateCollegeController);
-app.use('/diplomacollege',DiplomaCollegeController);
+app.use('/Diploma',DiplomaCollegeController);
 // app.use('/evaluations',evaluationController);
 app.use('/medicals',MedicalController);
 // app.use('/students',studentController);
