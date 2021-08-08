@@ -13,16 +13,20 @@ function Team() {
 
           <div className="row" data-aos="fade-left">
             <div className="col-lg-3 col-md-6">
-              <div className="member" data-aos="zoom-in" data-aos-delay="100">
+              <div className="member" data-aos="zoom-in" data-aos-delay="500">
                 <div className="pic">
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/img/team/team-1.jpg"}
+                    width="300px"
+                    height="300px"
+                    src={
+                      process.env.PUBLIC_URL + "/assets/img/team/team-1.jpeg"
+                    }
                     className="img-fluid"
                     alt=""
                   />
                 </div>
                 <div className="member-info">
-                  <h4>Walter White</h4>
+                  <h4>Mangesh Landge</h4>
                   <span>Chief Executive Officer</span>
                   <div className="social">
                     <a href="">
@@ -43,16 +47,18 @@ function Team() {
             </div>
 
             <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
-              <div className="member" data-aos="zoom-in" data-aos-delay="200">
+              <div className="member" data-aos="zoom-in" data-aos-delay="600">
                 <div className="pic">
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/img/team/team-2.jpg"}
+                    width="300px"
+                    height="300px"
+                    src={process.env.PUBLIC_URL + "/assets/img/team/team-2.png"}
                     className="img-fluid"
                     alt=""
                   />
                 </div>
                 <div className="member-info">
-                  <h4>Sarah Jhonson</h4>
+                  <h4>Afzal Ahmad</h4>
                   <span>Product Manager</span>
                   <div className="social">
                     <a href="">
@@ -73,16 +79,20 @@ function Team() {
             </div>
 
             <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <div className="member" data-aos="zoom-in" data-aos-delay="300">
+              <div className="member" data-aos="zoom-in" data-aos-delay="700">
                 <div className="pic">
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/img/team/team-3.jpg"}
+                    width="277px"
+                    height="277px"
+                    src={
+                      process.env.PUBLIC_URL + "/assets/img/team/team-3.jpeg"
+                    }
                     className="img-fluid"
                     alt=""
                   />
                 </div>
                 <div className="member-info">
-                  <h4>William Anderson</h4>
+                  <h4>Satwik Nayak</h4>
                   <span>CTO</span>
                   <div className="social">
                     <a href="">
@@ -106,14 +116,16 @@ function Team() {
               <div className="member" data-aos="zoom-in" data-aos-delay="400">
                 <div className="pic">
                   <img
+                    width="300px"
+                    height="300px"
                     src={process.env.PUBLIC_URL + "/assets/img/team/team-4.jpg"}
                     className="img-fluid"
                     alt=""
                   />
                 </div>
                 <div className="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
+                  <h4>Uday Kumar</h4>
+                  <span>Vice-President</span>
                   <div className="social">
                     <a href="">
                       <i className="bi bi-twitter"></i>

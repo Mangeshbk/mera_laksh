@@ -13,7 +13,7 @@ function Header() {
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
               <div data-aos="zoom-out">
                 <h1>
-                  Find Your educational dream with <span>मेरा लक्ष्य</span>
+                  Find Your dream career with <span>मेरा लक्ष्य</span>
                 </h1>
                 <h2>
                   Mera Laksh is a platform which provides educational guidence
@@ -24,6 +24,7 @@ function Header() {
                     href="#about"
                     className="btn-get-started scrollto"
                     onClick={() => history.push("education_path")}
+                    style={{ padding: "20px 40px", fontSize: "24px" }}
                   >
                     Get Started
                   </a>
@@ -36,7 +37,9 @@ function Header() {
               data-aos-delay="300"
             >
               <img
-                src={process.env.PUBLIC_URL + "/assets/img/hero-img.png"}
+                style={{ borderRadius: "7px" }}
+                // src={process.env.PUBLIC_URL + "/assets/img/hero-img.png"}
+                src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                 className="img-fluid animated"
                 alt=""
               />
