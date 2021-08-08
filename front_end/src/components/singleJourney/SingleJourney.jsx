@@ -199,7 +199,7 @@ export default function SingleJourny({journey}) {
       >
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel StepIconComponent={ColorlibStepIcon}>{label[0]}<Link to={journey.after==='Engineering' && label[1]=="Intermediate"?`/college_list/${label[1]}?filter_Science=true`:`/college_list/${label[1]}`}>{label[0]==10?`Do your best`:` See colleges for it`}</Link>
+            <StepLabel StepIconComponent={ColorlibStepIcon}>{label[0]}<Link to={journey.after==='Engineering' && label[1]=="Intermediate"?`/college_list/${label[1]}?filter_Science=true`:`/college_list/${label[1]}`}>{label[0]==10?` Do your best`:` See colleges for it`}</Link>
             </StepLabel>
           </Step>
         ))}
