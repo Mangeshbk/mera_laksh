@@ -6,6 +6,7 @@ import axios from "axios";
 import "./recommandCollege.css";
 import { TextField } from "@material-ui/core";
 import { Button } from "@material-ui/core";
+import Navigation from "./Navigation";
 
 const RecommendedCollege = () => {
   const { college } = useParams();
