@@ -1,7 +1,7 @@
 .navigation_main_container{
     width: 100%;
     height: 70px;
-    background-color:rgb(2, 2, 65);
+    background-color:#0D13A1;
 }
 .navigation-logo{
     width:15%;
@@ -14,6 +14,7 @@
     font-size: 28px;
     color: #FFFFFF;
     font-weight:700;
+    cursor: pointer;
 }
 
 .navigation-links{

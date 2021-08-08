@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./navBar.css";
-import { Link } from "react-router-dom";
+
 function Navbar() {
   // const [colorChange, setColorchange] = useState(false);
   // const changeNavbarColor = () => {
@@ -29,9 +29,9 @@ function Navbar() {
             style={{ cursor: "pointer" }}
           >
             <h1>
-              <Link>
+              <a>
                 <span>मेरा लक्ष्य</span>
-              </Link>
+              </a>
             </h1>
             {/* <!-- Uncomment below if you prefer to use an image logo --> */}
             {/* <!-- <a href="index.html"><img src="./assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
@@ -40,34 +40,39 @@ function Navbar() {
           <nav id="navbar" className="navbar">
             <ul>
               <li onClick={() => history.push("/")}>
-                <Link className="nav-link scrollto active" href="#hero">
+                <a className="nav-link scrollto active" href="#hero">
                   Home
-                </Link>
+                </a>
               </li>
               <li onClick={() => history.push("/#about")}>
-                <Link className="nav-link scrollto" href="#about">
+                <a className="nav-link scrollto" href="#about">
                   About
-                </Link>
+                </a>
               </li>
               <li onClick={() => history.push("/#features")}>
-                <Link className="nav-link scrollto" href="#features">
+                <a className="nav-link scrollto" href="#features">
                   Features
-                </Link>
+                </a>
               </li>
               <li onClick={() => history.push("/#gallery")}>
-                <Link className="nav-link scrollto" href="#gallery">
+                <a className="nav-link scrollto" href="#gallery">
                   Gallery
-                </Link>
+                </a>
               </li>
               <li onClick={() => history.push("/#team")}>
-                <Link className="nav-link scrollto" href="#team">
+                <a className="nav-link scrollto" href="#team">
                   Team
-                </Link>
+                </a>
               </li>
               <li onClick={() => history.push("/#contact")}>
-                <Link className="nav-link scrollto" href="#contact">
+                <a className="nav-link scrollto" href="#contact">
                   Contact
-                </Link>
+                </a>
+              </li>
+              <li onClick={() => history.push("/chat")}>
+                <a className="nav-link scrollto" href="#">
+                  Chat
+                </a>
               </li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>

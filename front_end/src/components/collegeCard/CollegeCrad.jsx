@@ -75,16 +75,30 @@ export default function MediaCard({ clg }) {
             {clg.Name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {clg.Branches_Available}
+            Branches: {clg.Branches_Available}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Ratings: {clg.Ratings}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Hostel: {clg.Hostel ? "Available" : "Not available"}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Cut-Off: {clg.CutOff}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Fees: ₹{clg.Fees}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            City: {clg.City}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            State: {clg.State}
           </Typography>
           <Typography>
-            <Link href={clg.Url} onClick={preventDefault}>
+            <a href={clg.Url} target={"_blank"}>
               Go to official site
-            </Link>
+            </a>
           </Typography>
         </CardContent>
       </CardActionArea>

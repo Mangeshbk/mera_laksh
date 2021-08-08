@@ -196,7 +196,7 @@ const RecommendedCollege = () => {
           <Button
             style={{ padding: "15px", backroungColor: "#17B57D" }}
             variant="contained"
-            color="purple"
+            color="#17B57D"
             onClick={handlesearch}
           >
             Search
