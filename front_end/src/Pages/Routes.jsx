@@ -5,8 +5,10 @@ import Home from "./Home";
 import Footer from "../components/footer/Footer";
 // import ScrollToTop from "../components/scrollToTop/ScrollToTop";
 import EducationPath from "./educatinoPath/EducationPath";
-import RecommendedCollege from './recommendecCollege/RecommendedCollege';
+import RecommendedCollege from "./recommendecCollege/RecommendedCollege";
 import Journy from "./journy/Journy";
+import Navigation from "./recommendecCollege/Navigation";
+import FootersSec from "./recommendecCollege/FootersSec";
 
 export default function Routes() {
   return (
@@ -14,7 +16,6 @@ export default function Routes() {
       {/* <ScrollToTop /> */}
       {/* <Navbar /> */}
       <Switch>
-
         <Route exact path="/">
           <Navbar />
           <Home />
@@ -26,13 +27,21 @@ export default function Routes() {
           <Footer />
         </Route>
         <Route path="/education_path/:category">
+          <Navigation />
           <Journy />
+          <FootersSec />
         </Route>
         <Route exact path="/college_list/:college">
+          <Navigation />
           <RecommendedCollege />
+          <FootersSec />
+        </Route>
+        <Route exact path="/chat">
+          <Navigation />
+          {/* <RecommendedCollege /> */}
+          <FootersSec />
         </Route>
       </Switch>
-
     </>
   );
 }

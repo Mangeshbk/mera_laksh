@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   const history = useHistory();
@@ -37,18 +36,18 @@ export default function Footer() {
                   style={{ marginLeft: "40px" }}
                   className="social-links mt-3"
                 >
-                  <Link href="#" className="twitter">
+                  <a href="#" className="twitter">
                     <i className="bx bxl-twitter"></i>
-                  </Link>
-                  <Link href="#" className="facebook">
+                  </a>
+                  <a href="#" className="facebook">
                     <i className="bx bxl-facebook"></i>
-                  </Link>
-                  <Link href="#" className="instagram">
+                  </a>
+                  <a href="#" className="instagram">
                     <i className="bx bxl-instagram"></i>
-                  </Link>
-                  <Link href="#" className="linkedin">
+                  </a>
+                  <a href="#" className="linkedin">
                     <i className="bx bxl-linkedin"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
 

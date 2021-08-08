@@ -1,14 +1,14 @@
 .footer_sec_div {
   width: 100%;
   height: 400px;
-  background-color: rgb(8, 8, 99);
+  background-color: #0D13A1;
   padding: 60px 0px 0px 100px;
 }
 .footer_about_div {
   width: 30%;
   height: 160px;
   border-top: 5px solid #1acc8d;
-  background-color: rgb(2, 2, 65);
+  background-color: #0D13A1;
   display: flex;
   flex-direction: column;
   text-align: center;
