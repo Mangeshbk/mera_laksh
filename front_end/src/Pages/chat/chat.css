@@ -1,0 +1,43 @@
+.CApp {
+    text-align: center;
+    background-color: #282c34;
+  
+}
+.title{
+    /* text-align: center; */
+    padding: 2%;
+    /* background-image: url('https://c8.alamy.com/comp/P96XGN/chat-bubble-application-communication-female-male-avatar-cartoon-character-diversity-poses-blue-background-flat-P96XGN.jpg'); */
+    color: #406377;
+    background-color: rgb(68, 147, 168);
+    position:fixed;
+    top:0;
+    
+  }
+  .bottom{
+    position:fixed;
+    width:51%;
+    left:0;
+    bottom:0;
+    margin-left:25vw;
+  }  
+.chat{
+    background-image: url('https://c8.alamy.com/comp/P96XGN/chat-bubble-application-communication-female-male-avatar-cartoon-character-diversity-poses-blue-background-flat-P96XGN.jpg');
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 50vw;
+    margin-left:25vw;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  .hide {
+    display: none;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: yellow;
+  }

@@ -9,6 +9,7 @@ import RecommendedCollege from "./recommendecCollege/RecommendedCollege";
 import Journy from "./journy/Journy";
 import Navigation from "./recommendecCollege/Navigation";
 import FootersSec from "./recommendecCollege/FootersSec";
+import Chat from './chat/Chat';
 
 export default function Routes() {
   return (
@@ -39,6 +40,7 @@ export default function Routes() {
         <Route exact path="/chat">
           <Navigation />
           {/* <RecommendedCollege /> */}
+          <Chat />
           <FootersSec />
         </Route>
       </Switch>
