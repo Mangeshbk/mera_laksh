@@ -1,0 +1,99 @@
+.footer_sec_div {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(8, 8, 99);
+  padding: 60px 0px 0px 100px;
+}
+.footer_about_div {
+  width: 30%;
+  height: 160px;
+  border-top: 5px solid #1acc8d;
+  background-color: rgb(2, 2, 65);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  float: left;
+}
+.footer_about_div > h1 {
+  color: #fff;
+}
+.footer_about_div > p {
+  margin-top: 5px;
+  color: #fff;
+}
+.footer_social_handles {
+  margin-left: 50px;
+  width: 20%;
+  height: 150px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+.social_handles_icons {
+  width: 60%;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.social_handles_icons > div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.social_handles_icons > div:hover {
+  background-color: #1acc8d;
+}
+
+.footer_community_section {
+  width: 35%;
+  height: 200px;
+  float: left;
+  color: white;
+  margin-left: 3%;
+}
+.footer_community_section > input {
+  width: 99%;
+  height: 40px;
+  float: left;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.footer_community_section > button {
+  float: left;
+  margin-left: -120px;
+  height: 40px;
+  width: 25%;
+  background-color: #1acc8d;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.footer_hr {
+  width: 95%;
+  border: 1px solid rgb(51, 51, 218);
+  float: left;
+  margin-top: 30px;
+}
+
+.copyRight_footer {
+  width: 26%;
+  height: 90px;
+  float: left;
+  margin: 10px 38% 0px 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

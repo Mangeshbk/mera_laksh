@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router";
 import Navbar from "../components/navBar/Navbar";
 import Home from "./Home";
 import Footer from "../components/footer/Footer";
-import ScrollToTop from "../components/scrollToTop/ScrollToTop";
+// import ScrollToTop from "../components/scrollToTop/ScrollToTop";
 import EducationPath from "./educatinoPath/EducationPath";
 import RecommendedCollege from './recommendecCollege/RecommendedCollege';
 import Journy from "./journy/Journy";
@@ -12,14 +12,18 @@ export default function Routes() {
   return (
     <>
       {/* <ScrollToTop /> */}
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
 
+        <Route exact path="/">
+          <Navbar />
+          <Home />
+          <Footer />
+        </Route>
         <Route exact path="/education_path">
+          <Navbar />
           <EducationPath />
+          <Footer />
         </Route>
         <Route path="/education_path/:category">
           <Journy />
@@ -28,7 +32,7 @@ export default function Routes() {
           <RecommendedCollege />
         </Route>
       </Switch>
-      <Footer />
+
     </>
   );
 }
