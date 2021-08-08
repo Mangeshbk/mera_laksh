@@ -24,7 +24,7 @@ function Journy() {
         setIsLoading(false)
 
       }catch(e){
-        console.err(e);
+        console.error(e);
         setError(true)
         setIsLoading(false)
 
