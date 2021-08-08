@@ -1,11 +1,13 @@
 .categories{
     margin: 100px auto 0 ;
+    padding: 5px;
     max-width: 1300px;
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-template-rows: auto;
     grid-gap:50px;
     justify-content: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 992px) {

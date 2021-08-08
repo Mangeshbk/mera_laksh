@@ -16,18 +16,18 @@ function Journy() {
   }, []);
   const fetchData = async () => {
     setIsLoading(true);
-    try {
-      const { data } = await axios.get(
-        `http://localhost:8080/journeys/${category}`
-      );
-      setData(data.data);
-      setIsLoading(false);
-    } catch (e) {
-      console.err(e);
-      setError(true);
-      setIsLoading(false);
-    }
-  };
+      try{
+        const {data} = await axios.get(`http://localhost:8080/journeys/${category}`)
+        setData(data.data);
+        setIsLoading(false)
+
+      }catch(e){
+        console.error(e);
+        setError(true)
+        setIsLoading(false)
+
+      }
+  }
   return (
     <>
       <div style={{ margin: "100px auto 50px" }}>
