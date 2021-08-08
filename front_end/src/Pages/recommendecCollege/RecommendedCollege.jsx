@@ -78,7 +78,7 @@ const RecommendedCollege = () => {
       </div>
       <div className="colleges">
         {data.map((clg) => (
-          <CollegeCrad key={clg.id} clg={clg} />
+          <CollegeCrad key={clg.id} clg={clg}/>
         ))}
       </div>
     </>
@@ -86,3 +86,40 @@ const RecommendedCollege = () => {
 };
 
 export default RecommendedCollege;
+// const home = () => {
+//   const history = useHistory();
+//   console.log(window.location.search);
+//   var param = new URLSearchParams(window.location.search);
+
+//   useEffect(()=>{
+//       const inputs = document.getElementsByClassName("inp");
+//       for(let i=0;i<inputs.length;i++){
+//           if(param.get(`${inputs[i].name}`)!=null){
+//               inputs[i].checked=true
+//           }
+//       }
+//   },[])
+
+//   const change =(e)=>{
+//       const {name,value} = e.target;
+
+//       if(e.target.checked){
+//               param.append(`${name}`, value);
+//       }else{
+//               param.delete(`${name}`)
+//       }
+//       // console.log(param.get(`${name}`));
+//       history.push({search: param.toString()});
+//   }
+//   return (
+//       <div>
+//         This is home page
+//         <button>change url</button>
+//         <input type="checkbox" className="inp" name="p1" value="male" onChange={change} />
+//         <input type="checkbox" className="inp" name="p2" value="female" onChange={change} />
+//         <input type="checkbox" className="inp" name="p3" value="others" onChange={change} />
+//       </div>
+//   );                                                                                                                          
+// };
+
+// export default home;
