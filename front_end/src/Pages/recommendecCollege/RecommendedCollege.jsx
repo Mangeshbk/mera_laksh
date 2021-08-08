@@ -4,6 +4,8 @@ import "./recommandCollege.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./recommandCollege.css";
+import { TextField } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 const RecommendedCollege = () => {
   const { college } = useParams();
@@ -38,43 +40,65 @@ const RecommendedCollege = () => {
         console.log(res);
         setState(res.data.states);
       })
-      //   .then((res) => getData())
       .catch((e) => alert(e));
   };
   return (
     <>
-      <div style={{ marginTop: "100px" }}>
-        <select onChange={(e) => setStName(e.target.value)}>
-          {state.map((item) => (
-            <option value={item.state_name}>{item.state_name}</option>
-          ))}
-        </select>
+      <div className="filter-container">
+        <div className="filter-box">
+          <div>
+            <label className="lable"> Select State: </label>
+            <select
+              className="drop-down-menu"
+              onChange={(e) => setStName(e.target.value)}
+            >
+              {state.map((item) => (
+                <option value={item.state_name}>{item.state_name}</option>
+              ))}
+            </select>
+          </div>
 
-        <div>
-          <label> Search by Fees</label>
-          <select name="Fees">
-            <option value={1}>Ascending</option>
-            <option value={-1}>descending</option>
-          </select>
+          <div>
+            <label className="lable"> Search by Fees: </label>
+            <select className="drop-down-menu" name="Fees">
+              <option value={1}>Ascending</option>
+              <option value={-1}>descending</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="lable"> Search by CutOff: </label>
+            <select className="drop-down-menu" name="CutOff">
+              <option value={-1}>descending</option>
+              <option value={1}>Ascending</option>
+            </select>
+          </div>
+
+          <div className="inputField">
+            <label className="lable"> Hostel:&nbsp;</label>
+            <input
+              className="checkBox-style"
+              type="checkbox"
+              name="p1"
+              value="Hostel"
+            />
+          </div>
         </div>
-
-        <div>
-          <label> Search by CutOff</label>
-          <select name="CutOff">
-            <option value={-1}>descending</option>
-            <option value={1}>Ascending</option>
-          </select>
+        <div className="search-feild">
+          <TextField
+            style={{ width: "400px" }}
+            id="outlined-basic"
+            label="Enter college name"
+            variant="outlined"
+          />
+          <Button
+            style={{ padding: "15px", backroungColor: "#17B57D" }}
+            variant="contained"
+            color="purple"
+          >
+            Search
+          </Button>
         </div>
-
-        <div>
-          <label>
-            <input type="checkbox" name="p1" value="Hostel" />
-            Hostel
-          </label>
-        </div>
-
-        <input type="text" placeholder="enter college name" />
-        <button>Search</button>
       </div>
       <div className="colleges">
         {data.map((clg) => (
