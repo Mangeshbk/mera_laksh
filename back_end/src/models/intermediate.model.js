@@ -11,6 +11,7 @@ const intermediateCollegeSchema = new mongoose.Schema(
         Bio:{type:Boolean},
         CutOff:{type:Number,required:true},
         Fees:{type:Number,required:true},
+        ImageUrl:{type:String,required:true},
         Url:{type:String,required:true},
         City:{type:String,required:true},
         State:{type:String,required:true},
