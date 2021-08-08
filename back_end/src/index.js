@@ -17,7 +17,7 @@ app.use('/journeys',Journeycontroller);
 app.use('/Engineering',EnggCollegeController);
 app.use('/commercecollege',CommerceCollegeController);
 app.use('/artcollege',ArtCollegeController);
-app.use('/intermediatecollege',IntermediateCollegeController);
+app.use('/Intermediate',IntermediateCollegeController);
 app.use('/Diploma',DiplomaCollegeController);
 // app.use('/evaluations',evaluationController);
 app.use('/medicals',MedicalController);
