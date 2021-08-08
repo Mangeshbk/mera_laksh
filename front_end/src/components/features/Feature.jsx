@@ -39,7 +39,7 @@ function Feature() {
               <div className="icon-box" data-aos="zoom-in" data-aos-delay="50">
                 <i className="ri-store-line" style={{ color: "#ffbb2c" }}></i>
                 <h3>
-                  <a href="">Lorem Ipsum</a>
+                  <a href="">Types of Education</a>
                 </h3>
               </div>
             </div>
@@ -50,7 +50,7 @@ function Feature() {
                   style={{ color: " #5578ff" }}
                 ></i>
                 <h3>
-                  <a href="">Dolor Sitema</a>
+                  <a href="">Educational path</a>
                 </h3>
               </div>
             </div>
@@ -61,7 +61,7 @@ function Feature() {
                   style={{ color: "#e80368" }}
                 ></i>
                 <h3>
-                  <a href="">Dolor Sitema</a>
+                  <a href="">Campus details</a>
                 </h3>
               </div>
             </div>
@@ -72,7 +72,7 @@ function Feature() {
                   style={{ color: "#e361ff" }}
                 ></i>
                 <h3>
-                  <a href="">Magni Dolores</a>
+                  <a href="">Department list</a>
                 </h3>
               </div>
             </div>
@@ -83,7 +83,7 @@ function Feature() {
                   style={{ color: "#47aeff" }}
                 ></i>
                 <h3>
-                  <a href="">Nemo Enim</a>
+                  <a href="">Expert advise</a>
                 </h3>
               </div>
             </div>
@@ -94,7 +94,7 @@ function Feature() {
                   style={{ color: "#ffa76e" }}
                 ></i>
                 <h3>
-                  <a href="">Eiusmod Tempor</a>
+                  <a href="">Personalised details</a>
                 </h3>
               </div>
             </div>
@@ -105,7 +105,7 @@ function Feature() {
                   style={{ color: "#11dbcf" }}
                 ></i>
                 <h3>
-                  <a href="">Midela Teren</a>
+                  <a href="">Campus ratings</a>
                 </h3>
               </div>
             </div>
@@ -116,7 +116,7 @@ function Feature() {
                   style={{ color: "#4233ff" }}
                 ></i>
                 <h3>
-                  <a href="">Pira Neve</a>
+                  <a href="">Previous Cut-offs</a>
                 </h3>
               </div>
             </div>

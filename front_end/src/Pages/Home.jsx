@@ -8,13 +8,12 @@ import Gallery from "../components/gallery/Gallery.jsx";
 import Team from "../components/team/Team.jsx";
 import FAQ from "../components/FAQ/FAQ.jsx";
 import Contact from "../components/contact/Contact.jsx";
-import Navbar from './../components/navBar/Navbar';
-
+import Navbar from "./../components/navBar/Navbar";
 
 function Home() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Header />
 
       <main id="main">
@@ -28,7 +27,7 @@ function Home() {
 
         <Team />
 
-        <FAQ />
+        {/* <FAQ />*/}
 
         <Contact />
       </main>
