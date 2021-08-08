@@ -4,6 +4,7 @@ import "./recommandCollege.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./recommandCollege.css";
+import Navigation from "./Navigation";
 
 const RecommendedCollege = () => {
   const { college } = useParams();
