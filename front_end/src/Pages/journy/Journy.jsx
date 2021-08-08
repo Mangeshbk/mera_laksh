@@ -2,6 +2,8 @@ import React,{useState,useEffect} from "react";
 import SingleJourny from "../../components/singleJourney/SingleJourney";
 import {useParams} from 'react-router-dom';
 import axios from 'axios';
+import Navigation from "../recommendecCollege/Navigation";
+import FootersSec from "../recommendecCollege/FootersSec";
 
 function Journy() {
   const [isLoading,setIsLoading] = useState(false);
@@ -29,6 +31,8 @@ function Journy() {
       }
   }
   return (
+    <>
+    <Navigation />
     <div style={{ margin: "100px auto 50px" }}>
       <h2 style={{ textAlign: "center", padding: "20px" }}>
         START YOUR JOURNY
@@ -40,6 +44,8 @@ function Journy() {
       {/* <SingleJourny/> */}
 
     </div>
+    <FootersSec />
+    </>
   );
 }
 
