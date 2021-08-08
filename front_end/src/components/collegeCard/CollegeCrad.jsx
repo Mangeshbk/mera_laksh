@@ -67,7 +67,7 @@ export default function MediaCard({ clg }) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://www.thoughtco.com/thmb/WeZTn-IMR0RqlNB4THgDxMFL__c=/2779x1852/filters:fill(auto,1)/swarthmore-college-Eric-Behrens-flickr-5706ffe35f9b581408d48cb3.jpg"
+          image={clg.ImageUrl}
           title="College Name"
         />
         <CardContent>
